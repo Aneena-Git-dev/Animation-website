@@ -14,6 +14,25 @@ span{
     font-size: 30px;
     font-weight: 600;
 }
+.sun{
+    width: 100px;
+    margin-left: 30px;
+}
+
+.sun-img{
+    width: 200px;
+    margin-left: 100px;
+    animation: sunmove 60s infinite;
+}
+@keyframes sunmove {
+        from{
+             transform: rotate(0deg);
+        }
+      to{
+        transform:rotate(360deg);
+      }
+      
+}
 .header .logo{
     display: flex;
     justify-content: center;
@@ -124,17 +143,47 @@ header p {
 .fish{
     position: absolute;
     right: 81px;
-    animation: fishMove 15s ease-in-out infinite;
+    animation: fishMove 80s linear infinite;
+}
+.fish-image2{
+    width: 100px;
+    animation: fishMove 80s linear infinite;
+}
+.fish-image3{
+    width: 50px;
+    animation: fishMove 80s linear infinite;
+}
+.fish-image4{
+    width: 100px;
+    animation: fishMove 80s linear infinite;
+}
+.fish-image5{
+    width: 200px;
+    animation: fishMove 80s linear infinite;
+}
+.fish-4{
+    position: relative;
+    top: -60px;
+}
+.fish-3{
+    position: relative;
+    bottom: 50px;
+    left: -70px;
+}
+.fish-5{
+    position: relative;
+    top: -100px;
+    left: -200px;
 }
 /* fish Animation */
 @keyframes fishMove {
-    0% {
-        transform: translateX(-50px);
+   from {
+        transform: translateX(500%);
     }
-
-    100% {
-        transform: translateX(-500px);
+    to {
+        transform: translateX(-500%);
     }
+    
 }
 .fish .fish-img{
     position: absolute;
@@ -194,14 +243,18 @@ footer {
     text-align: center;
     padding: 30px 0;
     position: fixed;
+ 
     bottom: 0;
 }
-   
-.footer-content{
-    margin-top: 100px;
+.footer-para{
+position: relative;
+
+ }  
+ .icon-set{
     position: relative;
-    z-index: 10;
-    }
+    z-index: 100px;
+ }
+
     @media screen and (max-width: 768px){
         .container{
             width: 100%;
